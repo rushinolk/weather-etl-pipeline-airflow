@@ -6,8 +6,6 @@ from sqlalchemy import create_engine, text
 from airflow.models import Variable
 from airflow.providers.postgres.hooks.postgres import PostgresHook
 
-
-
 # Extract
 
 def extract_clima_data():
@@ -71,7 +69,7 @@ def transform_data(raw_data):
     # Tratamento de colunas do tipo data 
     df['data_previsao'] = pd.to_datetime(df['data_previsao'])
 
-    logging.info("Transformação de dados bem sucedida")
+    logging.info('Transformação de dados bem sucedida')
 
     return df
     
