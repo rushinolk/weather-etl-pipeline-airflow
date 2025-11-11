@@ -127,3 +127,4 @@ Siga os passos abaixo para executar o pipeline completo no seu ambiente local.
 Após a execução, você verá a sua DAG ficar 100% verde na interface do Airflow.
 
 Você pode então usar seu cliente de banco de dados (como Beekeeper ou DBeaver) para se conectar ao seu banco Postgres (em `localhost:5433`) e inspecionar a tabela `previsao_clima`. Você verá que, mesmo que você dispare a DAG várias vezes, os dados **não serão duplicados**.
+
