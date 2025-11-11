@@ -54,6 +54,7 @@ Projeto-Pipeline-Clima/
 └── 📜 README.md
 ```
 
+
 -----
 
 ## ⚙️ Como Executar o Projeto
