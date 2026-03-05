@@ -108,5 +108,3 @@ def load_clima_data(df):
         logging.info("Carga de dados concluída com sucesso")
     except Exception as e:
         logging.error(f"Falha ao carregar os dados no banco.",exc_info=True)
-
-# Alteração no commit

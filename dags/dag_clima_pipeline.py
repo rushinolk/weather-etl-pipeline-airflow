@@ -48,14 +48,14 @@ with DAG(
 
 
     with TaskGroup(group_id='Verificando_dados') as tsk_group_check:
-        chk_vendas_tem_dados = SQLTableCheckOperator(
+        chk_clima_tem_dados = SQLTableCheckOperator(
             task_id='chk_clima_tem_dados',
             conn_id = POSTGRES_CONN_ID,
             table='previsao_clima',
             checks={"row_count_nonzero": {"check_statement": "COUNT(*)>0"}},
         )
 
-        chk_colunas_vendas = SQLColumnCheckOperator(
+        chk_colunas_previsao = SQLColumnCheckOperator(
             task_id='chk_coluna_data',
             conn_id = POSTGRES_CONN_ID,
             table='previsao_clima',
